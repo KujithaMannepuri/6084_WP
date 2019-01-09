@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";>
+        <style>
+        .border {
+            border: 25px solid lightblue;
+            padding: 25px;
+        }
+        .right {
+            width: 10px;
+            height: 10px;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 20px solid blue; 
+	    }
+	    .left {
+            width: 10px;
+            height: 10px;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 20px solid white; 
+	    }
+        </style>
+    </head>
+    <body>
+        <div class="arrow" style="text-align: right;height:40px;display: flex">
+            <div style="background-color: blue;width: 40px">
+            </div>
+                <div class="right">
+                </div>
+                <div style="font-size: 16px;width: 300px;background-color: white;">
+                    <p style="text-align: center; color: darkblue;"><strong>Learning by doing</strong></p>
+                </div>
+                <div class="left" style="background-color: blue">
+                </div>
+                <div style="background-color: blue;width: 120%">
+                </div>
+                </div>
+        <div class="border">
+            <div>
+            <p>Each computer has a built-in instructor set that it knows how to execute by design.</p>
+            <button type="button" class="btn btn-warning">Hint</button>
+            <br>
+            <br>
+            <div class="alert alert-warning alert-dismissasble">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                Recall that we use the term computation to mean "the execution of a sequence of instructions by a computer with the intention of solving a given problem."
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio" checked>True</label><br>
+                <label><input type="radio" name="optradio" >False</label>
+            </div>
+            <br>
+            <div class="alert alert-danger alert-dismissasble">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <span class="glyphicon glyphicon-remove"></span>
+                    <Strong>Incorrect.</Strong>Each computer has a set of rimitive instructions that it is "wired" to execute. we call this the instruction set of the computer.
+                </div>
+            </div>
+            <div>
+                <p>The computer uses intelligence to execute instructions.</p>
+                <button type="button" class="btn btn-warning">Hint</button>
+                <br>
+                <br>
+                <div class="alert alert-warning alert-dismissasble">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close" >&times;</a>
+                    Recall that we said a computer executes the instructions given to it mechanically.
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio" >True</label><br>
+                    <label><input type="radio" name="optradio" checked>False</label>
+                </div>
+                <br>
+                <div class="alert alert-success alert-dismissasble">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <span class="glyphicon glyphicon-ok"></span>
+                    <strong>Correct.</strong> A computer executes instructions automatically. Its main task is to simply execute the instructions given to it(from its instruction set) and remember their results as the computation goes on. The part that may require intelligence is expressing a computation in terms of those instructions.    
+                </div>
+                </div>
+        </div>
+        <div class="Sample" style="text-align: right;background-color: lightblue;height:40px">
+                <p style="color:blue">Reset this activity</p>
+            </div>
+    </body>
+</html>
