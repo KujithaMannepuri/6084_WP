@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comment</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script>
+            var index = -1;
+            function myfuncn() {
+                
+                // var key = "MSIT@123";
+                // var pswrd = document.forms["form"]["pwd"];
+                // if(pswrd.value === key) {
+                // var cmnt = document.getElementById("comment").value;
+                // document.getElementById("display").textContent = cmnt;
+                // } else {
+                //     document.getElementById("demo").innerHTML = "Password Incorrect";
+                // }
+                // arr[x] = document.getElementById("comment").value;
+                // x++;
+                
+                // var e = "<hr/>"
+                // for (var i = 0; i<arr.length; i++) {
+                //     e += y + arr[i];
+                // }
+                // document.getElementById("display").innerHTML = e;
+                // document.getElementById("comment").value = "";
+                var name = document.getElementById('usr').value;
+                var pswrd = document.getElementById('pwd').value;
+                var cmnt = document.getElementById('comment').value;
+                var key = "MSIT@123"
+                if (pswrd == "" || name == "") {
+                    alert("enter the details..")
+                }
+                else if (pswrd === key && name != "") {
+                    alert("Comment posted");
+                    index++;
+                    var arr = [];
+                    var usrname = [];
+                    arr[index] = cmnt;
+                    usrname[index] = name;
+                    // arr = document.getElementById("comment").value;
+                    // usrname = name;
+                    
+                    var comments = "";
+                    for(var i = arr.length-1; i >=0; i--) {
+                        comments += '<p>'+ arr[i] + '<p>' + '<br>' + '<p>' + usrname[i] + '<p>'
+                            console.log(comments);
+                    }
+                    document.getElementById("display").innerHTML = comments;
+                }
+                else {
+                    alert("wrong password");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+        <h1 style="text-align: center">Post Your Comment</h1>
+        <form id="form">
+            <div class="form-group">
+            <label for="usr">Enter your Name:</label>
+            <input type="text" class="form-control" id="usr">
+            <p id = "alert"></p>
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <label for="comment">Enter your Comment:</label>
+                <textarea class="form-control" id="comment" rows='5' required></textarea>
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <label for="pwd">Enter Secret Key:</label>
+                <input type="Password" class="form-control" id="pwd">
+                <p id="demo"></p>
+            </div>
+            </form>
+            <br><br>
+            <div class = "row">
+                <button onclick = "myfuncn()">Post Comment</button>
+            </div>
+            <div class = "container">
+                <p id="display"></p>
+            </div>
+    </div>
+    </body>
+</html>
