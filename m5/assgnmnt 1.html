@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type = "text/javascript" src = "assgnmnt 1.js"></script>
+        <style>
+            .border {
+                border: 25px solid lightblue;
+                padding: 25px;
+            }
+            .right {
+                width: 10px;
+                height: 10px;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-left: 20px solid blue; 
+            }
+            .left {
+                width: 10px;
+                height: 10px;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-left: 20px solid white; 
+            }
+            </style>
+    </head>
+    <body>
+        <div class="arrow" style="text-align: right;height:40px;display: flex">
+            <div style="background-color: blue;width: 40px">
+            </div>
+                <div class="right">
+                </div>
+                <div style="font-size: 16px;width: 300px;background-color: white;">
+                    <p style="text-align: center; color: darkblue;"><strong>Learning by doing</strong></p>
+                </div>
+                <div class="left" style="background-color: blue">
+                </div>
+                <div style="background-color: blue;width: 120%">
+                </div>
+                </div>
+                <div class="border">
+                    <ul>
+                        <li><p id = 'question'></p></li>
+                    <button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#demo">Hint</button>
+                    <div id="demo" class="collapse">
+                            <div class="alert alert-warning alert-dismissible" id = "hint">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            </div>
+                        </div>
+                        <div id = "radio"></div>
+                        <div id = "feedback"></div>
+                    </ul>
+                <div>
+                    <div class = "col-md-6">
+                <button type="button" id = 'previous' onclick = "prev()">Previous</button>
+                    </div>
+                <div class = "col-md-6">
+                <button type="button" id='Next' onclick = "nxt()">Next</button>
+                    </div>
+                </div>
+                <br>
+                </div>
+                <div class="Sample" style="text-align: right;background-color: lightblue;height:40px">
+                        <button style="color:blue" onclick = "load()">Reset this activity</button>
+                    </div>
+    </body>
+</html>
